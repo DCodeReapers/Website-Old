@@ -15,7 +15,8 @@ $(document).ready(function() {
 
 	// For Footer Include
 	$(".footer").load("pages/important/footer.html");
-
+	
+	// For Different Header Include
 	$(".include-navbar-common").load("pages/important/navbar-common.html");
 	$(".include-navbar-subject").load("pages/important/navbar-subject.html");
 	$(".include-navbar-coding").load("codereaping/pages/important/navbar.html");

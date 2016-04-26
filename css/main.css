@@ -170,6 +170,14 @@ hr{
 	border: px solid;
 	margin: 40px 0px;
 }
+pre{
+	padding: 25px;
+	white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 #follow-us{
 	width: 130%;
 	height: 100%;
