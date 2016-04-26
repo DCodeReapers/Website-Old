@@ -1,0 +1,49 @@
+$(document).ready(function() {
+	$(".smoothscroll").anchorAnimate();
+
+	$('.unitname').click(function(){
+		$(this).find('.subtopics').toggle(400);
+	});
+	$('.viewmore').click(function(){
+		$(this).find('.extrastuff').toggle(400);
+	});
+
+	$('.gallery-pic').hover(
+		function(){ $(this).find('.caption').show(400) },
+		function(){ $(this).find('.caption').hide(400) }
+	);
+
+	// For Footer Include
+	$(".footer").load("pages/important/footer.html");
+
+	$(".include-navbar-common").load("pages/important/navbar-common.html");
+	$(".include-navbar-subject").load("pages/important/navbar-subject.html");
+
+	// for Spy Navbar
+    $('body').scrollspy({target: ".navbar", offset: 250});   
+
+});
+
+
+
+
+jQuery.fn.anchorAnimate = function(settings) {
+	settings = jQuery.extend({
+	speed : 700
+	}, settings);	
+
+	return this.each(function(){
+		var caller = this
+		$(caller).click(function (event) {	
+			event.preventDefault()
+			var locationHref = window.location.href
+			var elementClick = $(caller).attr("href")
+		
+			var destination = $(elementClick).offset().top - 50;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+				window.location.hash = elementClick
+			});
+	  	return false;
+		})
+	})
+};
