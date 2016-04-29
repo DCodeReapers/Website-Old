@@ -39,6 +39,11 @@
 .div1, .div2{
 	padding: 40px 40px 70px 40px;
 	font-size: 16px;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+.div1:hover, .div2:hover{
+	overflow-x: auto; 
 }
 .div1, #timetable th{
 	background-color: #222;
@@ -138,8 +143,9 @@ ul {list-style-type: disc;}
 	text-align: right;
 }
 .gallery-pic{
-	width: 100%;
-	padding: 15px;
+	width: 24%;
+	padding: 20px;
+	display: inline-block;
 }
 .gallery-pic img{
 	width: 100%;
@@ -148,16 +154,16 @@ ul {list-style-type: disc;}
 	border-style: solid;
 	border-width:2px;
 }
-
 .caption{
 	position: absolute;
-	bottom: 5%;
+	bottom: 6%;
 	background-color: black;
 	opacity: .5;
 	color: white;
 	display: none;
 	border-radius: 10%;
 	word-wrap: break-word;
+	white-space: pre-wrap;
 	padding: 5px;
 	max-height: 270px;
 	font-size: 13px;
