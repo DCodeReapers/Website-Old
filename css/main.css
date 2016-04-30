@@ -39,11 +39,10 @@
 .div1, .div2{
 	padding: 40px 40px 70px 40px;
 	font-size: 16px;
-	overflow-x: hidden;
-	white-space: nowrap;
+	overflow-x: auto;
 }
 .div1:hover, .div2:hover{
-	overflow-x: auto; 
+	/*overflow-x: auto; */
 }
 .div1, #timetable th{
 	background-color: #222;
@@ -144,6 +143,9 @@ ul {list-style-type: disc;}
 }
 
 /*Photo Gallery*/
+.gallery-pic{
+	display: inline-flex;
+}
 .gallery-pic img{
 	width: 260px;
 	height: 260px;
