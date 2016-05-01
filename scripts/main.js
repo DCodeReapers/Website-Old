@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$(".include-navbar-coding").load("codereaping/pages/important/navbar.html");
 
 	// for Spy Navbar
-    $('body').scrollspy({target: ".navbar", offset: 250});   
+    $('body').scrollspy({target: ".navbar", offset: 150});   
 
     document.getElementsByClassName("frontpic")[0].style.height = window.innerHeight + "px";
 });
@@ -40,9 +40,8 @@ jQuery.fn.anchorAnimate = function(settings) {
 		$(caller).click(function (event) {	
 			event.preventDefault()
 			var locationHref = window.location.href
-			var elementClick = $(caller).attr("href")
-		
-			var destination = $(elementClick).offset().top - 50;
+			var elementClick = $(caller).attr("href");
+			var destination = $(elementClick).offset().top;
 			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
 				window.location.hash = elementClick
 			});
