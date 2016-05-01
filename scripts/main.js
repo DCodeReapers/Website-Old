@@ -24,6 +24,7 @@ $(document).ready(function() {
 	// for Spy Navbar
     $('body').scrollspy({target: ".navbar", offset: 250});   
 
+    document.getElementsByClassName("frontpic")[0].style.height = window.innerHeight + "px";
 });
 
 
