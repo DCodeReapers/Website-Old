@@ -8,10 +8,10 @@ $(document).ready(function() {
 		$(this).find('.extrastuff').toggle(400);
 	});
 
-	$('.gallery-pic').hover(
-		function(){ $(this).find('.caption').show(400) },
-		function(){ $(this).find('.caption').hide(400) }
-	);
+	// $('.gallery-pic').hover(
+	// 	function(){ $(this).find('.caption').show(400) },
+	// 	function(){ $(this).find('.caption').hide(400) }
+	// );
 
 	// For Footer Include
 	$(".footer").load("pages/important/footer.html");
