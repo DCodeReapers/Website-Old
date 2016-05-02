@@ -114,7 +114,7 @@
 
 ul {list-style-type: disc;}
 
-#syllabus img, #notes img, #ebooks img, #videos img, #questionpapers img, #quicklinks img{
+#syllabus img, #notes img, #ebooks img, #videos img, #questionpapers img, #quicklinks img, #bagpack img{
 	width: 100px;
 	height: 100px;
 	padding: 25px;
@@ -122,6 +122,13 @@ ul {list-style-type: disc;}
 	box-shadow: none;
 	display: block;
     margin: 0 auto;
+}
+#bagpack img{
+	width: 200px;
+	height: 200px;
+}
+#bagpack{
+	text-align: center;
 }
 #syllabus img:hover, #notes img:hover, #ebooks img:hover, #videos img:hover, #questionpapers img:hover, #quicklinks img:hover{
 	width: 102px;
