@@ -13,6 +13,8 @@ $(document).ready(function() {
 	// 	function(){ $(this).find('.caption').hide(400) }
 	// );
 
+	$("#myModal").modal({backdrop: true}); // Pop Up Window
+
 	// For Footer Include
 	$(".footer").load("pages/important/footer.html");
 	
